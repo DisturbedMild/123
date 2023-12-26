@@ -1,5 +1,5 @@
-import { useState, useContext } from "react";
-import FieldModeContext from "../../context/field-mode-context";
+import { useState, useContext } from 'react';
+import FieldModeContext from '../../context/field-mode-context';
 
 interface FieldProps {
     cellId: number,
@@ -19,7 +19,7 @@ function Field(props: FieldProps) {
     }
 
     return (
-        <div className={`w-12 h-12 border border-white ${isSelected ? "bg-cyan-500" : ''}`} onMouseEnter={onMouseEnterHandler} data-cell={props.cellId}></div>
+        <div className={`w-12 h-12 border border-white ${isSelected ? 'bg-cyan-500' : ''}`} onMouseEnter={onMouseEnterHandler} data-cell={props.cellId}></div>
     )
 }
 

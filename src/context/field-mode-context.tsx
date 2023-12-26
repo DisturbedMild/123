@@ -1,8 +1,8 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
 const FieldModeContext = createContext({
     fieldsCount: 5,
-    mode: ""
+    mode: ''
 });
 
 export default FieldModeContext;

@@ -1,11 +1,11 @@
-import { useState } from "react";
-import SelectBar from "./components/SelectBar/SelectBar";
-import Fields from "./components/Fields/Fields";
+import { useState } from 'react';
+import SelectBar from './components/SelectBar/SelectBar';
+import Fields from './components/Fields/Fields';
 import './App.css'
-import FieldModeContext from "./context/field-mode-context";
+import FieldModeContext from './context/field-mode-context';
 
 function App() {
-  const [fields, setFields] = useState({ fieldsCount: 5, mode: "" });
+  const [fields, setFields] = useState({ fieldsCount: 5, mode: '' });
 
   return (
     <>
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

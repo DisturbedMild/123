@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-const url = "https://60816d9073292b0017cdd833.mockapi.io/modes";
+import { useState, useEffect } from 'react';
+const url = 'https://60816d9073292b0017cdd833.mockapi.io/modes';
 
 type Mode = {
   name: string,
@@ -13,8 +13,8 @@ interface SelectBarProps {
 
 function SelectBar(props: SelectBarProps) {
   const [data, setData] = useState<Mode[]>([]);
-  const [option, setOption] = useState<string>("");
-  const defaultValue = "Pick Mode";
+  const [option, setOption] = useState<string>('');
+  const defaultValue = 'Pick Mode';
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setOption(e.target.value)
@@ -36,8 +36,8 @@ function SelectBar(props: SelectBarProps) {
   }, [])
 
   return (
-    <form id="fields-mode" onSubmit={onSubmitHandler} className="mb-6 flex items-center gap-8">
-      <select name="mode" id="mode" onChange={onChangeHandler} defaultValue={defaultValue}>
+    <form id='fields-mode' onSubmit={onSubmitHandler} className='mb-6 flex items-center gap-8'>
+      <select name='mode' id='mode' onChange={onChangeHandler} defaultValue={defaultValue}>
         <option value={defaultValue} disabled >Pick Mode</option>
         {data.map((item: Mode) => {
           return (
@@ -45,7 +45,7 @@ function SelectBar(props: SelectBarProps) {
           )
         })}
       </select>
-      <button type="submit" className="">START</button>
+      <button type='submit' className=''>START</button>
     </form>
   )
 }
